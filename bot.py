@@ -51,7 +51,7 @@ async def buy_premium(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Создаем инвойс (счет) на 50 Stars
     await query.message.reply_invoice(
         title="🦊 FOX CHEATS PREMIUM",
-        description="Доступ к 5 премиум клиентам Minecraft навсегда + приоритетная поддержка",
+        description="Доступ к множеству премиум клиентам Minecraft навсегда + приоритетная поддержка",
         payload="premium_access_50stars",
         provider_token="",  # ПУСТОЙ для Telegram Stars!
         currency="XTR",  # XTR = Telegram Stars
@@ -102,7 +102,7 @@ async def successful_payment(update: Update, context: ContextTypes.DEFAULT_TYPE)
     )
     
     # Отправляем уведомление админу (тебе)
-    admin_id = 123456789  # ЗАМЕНИ НА СВОЙ TELEGRAM ID!
+    admin_id = 8397829176 # ЗАМЕНИ НА СВОЙ TELEGRAM ID!
     try:
         await context.bot.send_message(
             chat_id=admin_id,
